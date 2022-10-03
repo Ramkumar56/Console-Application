@@ -134,7 +134,7 @@ public class Main {
                     int User=in.nextInt();
                     if(map.containsKey(User)){
                         DeleteAccount(map.get(User),map.get(User).FriendsList);
-                        popular.remove(User);
+                        popular.remove(User-1);
                         map.remove(User);
                         System.out.println("\n\t Your Account Successfully Deleted");
                     }
